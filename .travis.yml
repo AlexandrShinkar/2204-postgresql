@@ -1,0 +1,11 @@
+dist: jammy
+group: dev
+arch:
+  - amd64
+  - arm64
+services:
+  - postgresql
+before_script:
+  - sleep 10
+script:
+  - psql -c 'SELECT * FROM pg_stat_database;'
