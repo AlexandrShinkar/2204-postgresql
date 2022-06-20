@@ -1,8 +1,5 @@
 dist: jammy
 group: dev
-arch:
-  - amd64
-  - arm64
 services:
   - postgresql
 before_script:
